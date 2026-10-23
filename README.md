@@ -27,7 +27,7 @@ hivatalos órarend-PDF-ekből származnak.
 index.html                  A főoldal (a kért alkalmazás)
 assets/styles.css           Ipari stílus, reszponzív és nyomtatási szabályok
 assets/app.js               Kliensoldali logika (nincs build lépés)
-assets/fonts/               Barlow Condensed + IBM Plex Mono (OFL licenc)
+assets/fonts/               Oswald + Lato (OFL licenc, az iskolai oldal betűtípusai)
 data/schedules.js           Generált órarend-adatok (window.SCHEDULE_DATA)
 tools/extract_schedules.py  PDF → data/schedules.js kinyerő
 tools/validate-data.js      Adatellenőrzés (node tools/validate-data.js)
@@ -82,8 +82,17 @@ közvetlenül publikálható: állítsd a Pages forrást a megfelelő branch
 gyökerére. A `.nojekyll` fájl biztosítja, hogy minden fájl változtatás nélkül
 kiszolgálásra kerüljön.
 
+## Dizájn
+
+A felület a [nemesgszi.hu](https://www.nemesgszi.hu/) színvilágához igazodik:
+
+- cián `#00A6E0` / `#00BBFF` (linkek, akcentusok), petrol `#0E2A33` (fejlécek, szöveg),
+- korall `#C2472A` (csoportjelölések, figyelmeztetések),
+- világos háttér (`#F1F7F9`, fehér kártyák) – a szövegek kontrasztja mindenhol
+  megfelel a WCAG AA szintnek (a normál szövegek 4.5:1 felett).
+
 ## Betűtípusok
 
-A `assets/fonts` mappában található Barlow Condensed és IBM Plex Mono
-betűtípusok az SIL Open Font License 1.1 alatt használhatók
-(`LICENSE-barlow-condensed.txt`, `LICENSE-ibm-plex-mono.txt`).
+A `assets/fonts` mappában található Oswald (címsorok) és Lato (szöveg)
+betűtípusok – ugyanazok, amelyeket az iskolai weboldal használ – az SIL Open
+Font License 1.1 alatt használhatók (`LICENSE-oswald.txt`, `LICENSE-lato.txt`).
