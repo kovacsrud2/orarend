@@ -1,1 +1,1 @@
-# orarend
+# A mappákban az órarend alkalmazáshoz szükséges .pdf fájlok illetve minden egyes mappában az adott mappa fájljaira jellemző hasznos információk vannak .md fájlokban.
