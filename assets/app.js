@@ -222,7 +222,7 @@
         <circle class="reticle-ring" cx="60" cy="60" r="41" stroke="currentColor" stroke-width="1" stroke-dasharray="3 7"/>
         <circle cx="60" cy="60" r="27" stroke="currentColor" stroke-width="1" opacity=".6"/>
         <path d="M60 3v23M60 94v23M3 60h23M94 60h23" stroke="currentColor" stroke-width="1"/>
-        <path d="M47 60h26M60 47v26" stroke="#ff7a1a" stroke-width="1.4"/>
+        <path d="M47 60h26M60 47v26" stroke="#00a6e0" stroke-width="1.4"/>
         <circle class="reticle-core" cx="60" cy="60" r="4"/>
       </svg>`;
   }
