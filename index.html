@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f1214">
+  <title>Órarendek · Békéscsabai SZC Nemes Tihamér Technikum és Kollégium</title>
+  <meta name="description" content="Interaktív iskolai órarend-kereső: tanárok, osztályok és tantermek heti órarendje a 2026/2027-es tanévre.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230f1214'/%3E%3Cpath d='M10 14h44v6H10zm0 15h28v6H10zm0 15h44v6H10z' fill='%23ff7a1a'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#controls">Ugrás a választóhoz</a>
+
+  <div class="page">
+    <header class="site-header">
+      <div class="topline">
+        <p class="topline__brand">
+          <span class="topline__mark" aria-hidden="true"></span>
+          Békéscsabai SZC · Nemes Tihamér Technikum és Kollégium
+        </p>
+        <p class="topline__status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="source-count">137</span> PDF feldolgozva
+        </p>
+      </div>
+
+      <div class="hero">
+        <p class="hero__kicker">
+          <span class="hero__kicker-line" aria-hidden="true"></span>
+          Iskolai órarend-kereső
+          <span class="hero__year">2026/2027</span>
+        </p>
+        <h1>Órarendek</h1>
+        <p class="hero__lead">
+          Válassz tanárt, osztályt vagy tantermet — a heti órarend azonnal
+          megjelenik, a hivatalos iskolai PDF-ek alapján.
+        </p>
+      </div>
+
+      <div class="hazard" aria-hidden="true"></div>
+    </header>
+
+    <main>
+      <section class="control-panel" id="controls" aria-labelledby="controls-title">
+        <div class="panel-head">
+          <span class="panel-head__index" aria-hidden="true">01</span>
+          <h2 id="controls-title">Választó</h2>
+          <span class="panel-head__hint">Három szempont szerint</span>
+        </div>
+
+        <div class="select-stack">
+          <div class="field">
+            <label for="teacher-select">
+              <span class="field__no" aria-hidden="true">01</span>
+              Tanárok
+            </label>
+            <div class="select-wrap">
+              <select id="teacher-select" data-type="teachers" autocomplete="off">
+                <option value="">— Válassz tanárt —</option>
+              </select>
+              <span class="select-arrow" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="class-select">
+              <span class="field__no" aria-hidden="true">02</span>
+              Osztályok
+            </label>
+            <div class="select-wrap">
+              <select id="class-select" data-type="classes" autocomplete="off">
+                <option value="">— Válassz osztályt —</option>
+              </select>
+              <span class="select-arrow" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="room-select">
+              <span class="field__no" aria-hidden="true">03</span>
+              Tantermek
+            </label>
+            <div class="select-wrap">
+              <select id="room-select" data-type="rooms" autocomplete="off">
+                <option value="">— Válassz tantermet —</option>
+              </select>
+              <span class="select-arrow" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="result" id="result" aria-busy="false">
+        <div class="loading">
+          <span class="loading__bar" aria-hidden="true"></span>
+          <p>Adatok betöltése…</p>
+        </div>
+      </section>
+
+      <p class="sr-only" id="status-message" role="status" aria-live="polite"></p>
+
+      <noscript>
+        <div class="noscript">
+          <strong>JavaScript szükséges.</strong>
+          Az órarendek megjelenítéséhez engedélyezd a JavaScript futtatását a böngészőben.
+        </div>
+      </noscript>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Adatforrás: iskolai órarend-PDF-ek
+        <span class="footer-sep" aria-hidden="true">/</span>
+        <span id="footer-count">137</span> fájl
+        <span class="footer-sep" aria-hidden="true">/</span>
+        2026.10.23.
+      </p>
+      <p class="site-footer__mark">NEMES TIHAMÉR · ÓRAREND-RENDSZER</p>
+    </footer>
+  </div>
+
+  <script src="data/schedules.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

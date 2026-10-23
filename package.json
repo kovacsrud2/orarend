@@ -1,0 +1,14 @@
+{
+  "name": "orarend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Iskolai órarend-kereső webalkalmazás tanárok, osztályok és tantermek órarendjéhez",
+  "keywords": ["órarend", "iskola", "timetable", "static-site"],
+  "license": "MIT",
+  "scripts": {
+    "dev": "python3 -m http.server 8080 --bind 0.0.0.0",
+    "start": "npm run dev",
+    "extract": "python3 tools/extract_schedules.py",
+    "validate": "node tools/validate-data.js"
+  }
+}
